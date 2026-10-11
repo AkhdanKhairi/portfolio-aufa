@@ -36,6 +36,10 @@ img {
   max-width: 100%;
 }
 
+/* =========================
+   NAVBAR
+========================= */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -75,6 +79,10 @@ img {
   font-size: 1.6rem;
   cursor: pointer;
 }
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
   min-height: 580px;
@@ -126,6 +134,10 @@ img {
   margin-top: 28px;
 }
 
+/* =========================
+   BUTTON
+========================= */
+
 .btn {
   display: inline-block;
   padding: 11px 20px;
@@ -142,6 +154,14 @@ img {
 .btn-outline {
   color: var(--accent);
 }
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* =========================
+   GENERAL SECTION
+========================= */
 
 .section {
   padding: 85px 8%;
@@ -161,6 +181,10 @@ img {
 .section-muted {
   background: #f0f2f7;
 }
+
+/* =========================
+   SKILLS
+========================= */
 
 .skills-list,
 .projects-grid {
@@ -186,6 +210,10 @@ img {
 .project-content > p {
   color: var(--muted);
 }
+
+/* =========================
+   PROJECT CARDS
+========================= */
 
 .project-card {
   display: flex;
@@ -228,6 +256,14 @@ img {
   font-weight: 600;
 }
 
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   CONTACT
+========================= */
+
 .contact-links {
   display: flex;
   flex-wrap: wrap;
@@ -236,6 +272,10 @@ img {
   font-weight: 600;
 }
 
+/* =========================
+   FOOTER
+========================= */
+
 .footer {
   padding: 25px 8%;
   border-top: 1px solid var(--border);
@@ -243,6 +283,74 @@ img {
   text-align: center;
   font-size: 0.9rem;
 }
+
+/* =========================
+   DETAIL PROYEK
+========================= */
+
+.project-detail {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.project-detail h1 {
+  margin-bottom: 16px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.project-detail h2 {
+  margin: 32px 0 20px;
+}
+
+.project-detail p {
+  line-height: 1.8;
+}
+
+/* =========================
+   GALERI DOKUMENTASI
+========================= */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 24px 0;
+  align-items: start;
+}
+
+.gallery figure {
+  min-width: 0;
+  margin: 0;
+  padding: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.gallery img {
+  display: block;
+  width: 100%;
+  height: 220px;
+  object-fit: contain;
+  background: #f3f4f6;
+  border-radius: 8px;
+}
+
+.gallery figcaption {
+  padding: 12px 4px 4px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* =========================
+   TABLET
+========================= */
 
 @media (max-width: 800px) {
   .hero {
@@ -260,7 +368,15 @@ img {
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .project-detail {
+    width: 92%;
+  }
 }
+
+/* =========================
+   MOBILE / HP
+========================= */
 
 @media (max-width: 600px) {
   .navbar {
@@ -302,100 +418,29 @@ img {
     grid-template-columns: 1fr;
   }
 
-  
-.project-detail {
-  width: min(1100px, 90%);
-  margin: 0 auto;
-  padding: 70px 0;
-}
+  .project-detail {
+    width: 90%;
+    padding: 30px 0;
+  }
 
-.project-detail h1 {
-  margin-bottom: 16px;
-  font-size: clamp(2rem, 5vw, 3.5rem);
-}
+  .project-detail h2 {
+    margin: 28px 0 16px;
+  }
 
-.project-detail h2 {
-  margin: 40px 0 20px;
-}
-
-.project-detail p {
-  line-height: 1.8;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
-  margin-top: 24px;
-}
-
-.gallery figure {
-  overflow: hidden;
-  border: 1px solid #e7e7e4;
-  border-radius: 14px;
-  background: #fff;
-}
-
-.gallery img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
-}
-
-.gallery figcaption {
-  padding: 12px 15px;
-  color: #696b73;
-  font-size: 0.9rem;
-}
-
-@media (max-width: 600px) {
   .gallery {
     grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .gallery figure {
+    padding: 12px;
+  }
+
+  .gallery img {
+    height: 200px;
+  }
+
+  .footer {
+    padding: 22px 5%;
   }
 }
-}
-
-
-/* Frame dokumentasi proyek */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  margin: 24px auto;
-}
-
-.gallery figure {
-  margin: 0;
-  padding: 14px;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-}
-
-.gallery img {
-  display: block;
-  width: 100%;
-  height: 220px;
-  object-fit: contain;
-  background: #f3f4f6;
-  border-radius: 8px;
-}
-
-.gallery figcaption {
-  padding: 12px 4px 4px;
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #374151;
-}
-
-/* Tampilan HP */
-@media (max-width: 600px) {
-  .gallery {
-    grid-template-columns: 1fr;
-  }
-}
-
