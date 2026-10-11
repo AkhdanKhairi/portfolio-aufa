@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Portofolio | Aufa Akhdan Khairi</title>
+  <meta
+    name="description"
+    content="Portofolio mahasiswa Informatika yang tertarik pada Web Development."
+  >
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <a href="#home" class="logo">Portofolio<span>.</span></a>
+
+    <button
+      class="menu-toggle"
+      id="menu-toggle"
+      aria-label="Buka menu navigasi"
+      aria-expanded="false"
+      aria-controls="nav-menu"
+    >
+      ☰
+    </button>
+
+    <nav id="nav-menu" class="nav-menu">
+      <a href="#home">Beranda</a>
+      <a href="#about">Tentang</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Proyek</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">MAHASISWA INFORMATIKA | UNIVERSITAS IBN KHALDUN BOGOR </p>
+
+        <h1>
+          Halo, saya <span>Aufa Akhdan Khairi</span>.
+          <br>
+         Tertarik pada Frontend Web Development & UI/UX Design.
+        </h1>
+
+        <p>
+        Berfokus mengembangkan keahlian Frontend Web Development secara praktis, meliputi pembuatan desain UI/UX, prototipe interaktif, serta penerjemahan desain menjadi aplikasi web yang responsif.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">
+            Lihat Proyek
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            Hubungi Saya
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="assets/profile.jpeg"
+          alt="Foto profil Aufa Akhdan Khairi"
+        >
+      </div>
+    </section>
+
+    <!-- Tentang Saya -->
+    <section id="about" class="section">
+      <p class="eyebrow">KENALI SAYA</p>
+      <h1>Tentang Saya</h1>
+
+      <p class="section-description">
+        Mahasiswa S1 Teknik Informatika Universitas Ibn Khaldun Bogor dengan minat mendalam pada Frontend Web Development dan UI/UX Design. Memiliki pengalaman merancang antarmuka serta mengimplementasikan aplikasi web berbasis React.js dan Figma melalui berbagai pengerjaan proyek.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-muted">
+      <p class="eyebrow">KEMAMPUAN</p>
+      <h2>Skills</h2>
+
+      <div class="skills-list">
+        <article class="skill-card">
+          <h3>HTML</h3>
+          <p>Menyusun struktur halaman website.</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>CSS</h3>
+          <p>Mengatur tampilan dan tata letak website.</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Mempelajari interaksi dan perilaku halaman web.</p>
+        </article>
+        
+       <article class="skill-card">
+          <h3>UI/UX Design</h3>
+          <p>Membuat UI/UX Design, Wireframing, Prototyping,.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <p class="eyebrow">KARYA SAYA</p>
+      <h2>Proyek Pilihan</h2>
+
+      <div class="projects-grid">
+        <!-- Proyek E-Office -->
+        <article class="project-card">
+          <img
+            src="assets/eoffice/dashboard.png"
+            alt="Screenshot proyek sistem administrasi e-Office"
+            class="project-image"
+          >
+
+          <div class="project-content">
+            <p class="project-status">Proyek</p>
+            <h3>Sistem E-Office</h3>
+
+            <p>
+              Sistem E-Office FTS UIKA Bogor adalah platform terintegrasi yang mendigitalisasi layanan administrasi persuratan. Aplikasi ini mengelola pencatatan arsip hingga pengiriman disposisi berjenjang guna menciptakan alur kerja yang transparan dan real-time.
+            </p>
+
+            <p class="tech-stack">
+              Teknologi: React.js, Vite, JavaScript, HTML, CSS, Figma 
+            </p>
+
+        <!-- Tombol menuju halaman detail E-Office -->
+            <a href="projects/eoffice.html" class="project-link">
+             Lihat Detail Proyek →
+            </a>
+
+            </a>
+          </div>
+        </article>
+
+        <!-- Proyek Pemetaan HIMATEKINFO -->
+        <article class="project-card">
+          <img
+            src="assets/himatekinfo/picture7.png"
+            alt="Pratinjau rencana website pemetaan HIMATEKINFO"
+            class="project-image"
+          >
+
+          <div class="project-content">
+            <p class="project-status">Tahap Perencanaan</p>
+            <h3> Website Profile HIMATEKINFO </h3>
+
+            <p>
+              Pengembangan dan pengelolaan portal informasi digital HIMATEKINFO. Proyek ini bertujuan menjembatani komunikasi organisasi dengan audiens melalui penyediaan informasi program kerja yang mudah diakses, responsif, dan transparan.
+            </p>
+
+            <p class="tech-stack">
+              Teknologi: JavaScript, HTML, CSS
+            </p>
+
+            <!-- Tombol menuju halaman detail E-Office -->
+            <a href="projects/himatekinfo.html" class="project-link">
+             Lihat Detail Proyek →
+            </a>
+
+          </div>
+        </article>
+
+                <!-- Proyek Pemetaan itmart -->
+        <article class="project-card">
+          <img
+            src="assets/itmart/homepage.png"
+            alt="website sederhana untuk memesan produk di ITMart"
+            class="project-image"
+          >
+
+          <div class="project-content">
+            <p class="project-status">Tahap Perencanaan</p>
+            <h3> Platform Pemesanan Barang Online (IT Mart) </h3>
+
+            <p>
+              Website E-Commerce IT Mart adalah platform digital yang dirancang untuk memodernisasi operasional warung kampus di Lab Teknik Informatika Universitas Ibn Khaldun Bogor. Sistem ini menyediakan fitur katalog produk jajanan, pembayaran digital, serta kemudahan bagi admin untuk memantau stok dan transaksi secara real-time.
+            <p class="tech-stack">
+              Teknologi: React.js, JavaScript, HTML, CSS
+            </p>
+
+            <!-- Tombol menuju halaman detail E-Office -->
+            <a href="projects/itmart.html" class="project-link">
+             Lihat Detail Proyek →
+            </a>
+            
+          </div>
+        </article>
+
+        
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="section section-muted">
+      <p class="eyebrow">TERHUBUNG</p>
+      <h2>Kontak Saya</h2>
+
+      <p class="section-description">
+        Siap berkontribusi dan menimba pengalaman profesional dalam tim pengembangan perangkat lunak, dengan fokus utama pada Frontend Web Development dan perancangan UI/UX.
+      </p>
+
+      <div class="contact-links">
+        <a href="mailto:aufaakhairi08@gmail.com">Email</a>
+       
+        <a
+          href="https://www.linkedin.com/in/aufa-akhdan-khairi-9b7786295?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>
+      © <span id="current-year"></span> Aufa Akhdan Khairi.
+      Dibuat untuk portofolio pribadi.
+    </p>
+  </footer>
+</body>
+</html>
